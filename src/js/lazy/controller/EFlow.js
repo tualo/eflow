@@ -269,7 +269,7 @@ Ext.define('Tualo.eflow.lazy.controller.EFlow', {
         await new Promise(resolve => setTimeout(resolve, 200));
         me.currentImportPosition++;
         if (me.currentImportPosition < total) {
-            me.importReports();
+            me.importReports.bind(me)();
         } else {
             Ext.MessageBox.alert('Import', 'Die Daten wurden verarbeitet');
             store.load();
