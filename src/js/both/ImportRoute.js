@@ -12,10 +12,8 @@ Ext.define('Tualo.routes.eflow.Import', {
     url: 'eflow-import',
     handler: {
         action: function () {
-
-            Ext.getApplication().addView('Tualo.Eflow.lazy.ImportPanel', {
-                type: type,
-                reportnumber: reportnumber
+            console.log('Adding EFlow view');
+            Ext.getApplication().addView('Tualo.eflow.lazy.EFlow', {
             });
 
         },
