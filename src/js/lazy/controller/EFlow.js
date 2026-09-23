@@ -273,6 +273,7 @@ Ext.define('Tualo.eflow.lazy.controller.EFlow', {
         } else {
             Ext.MessageBox.alert('Import', 'Die Daten wurden verarbeitet');
             store.load();
+            me.asyncInitialation();
         }
 
     },
