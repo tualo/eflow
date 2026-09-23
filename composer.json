@@ -1,0 +1,17 @@
+{
+  "name": "tualo/eflow",
+  "description": "eflow package for Tualo Office",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Tualo\\Office\\Eflow\\": "src/"
+    },
+    "files": [
+      "src/functions.php"
+    ]
+  },
+  "minimum-stability": "dev",
+  "require": {},
+  "version": "1.0.1"
+}
